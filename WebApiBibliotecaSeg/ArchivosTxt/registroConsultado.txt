@@ -1,0 +1,5 @@
+
+Titulo ingresado: Harry, con 2 resultados, obtenido el  27/03/2022 07:33:43 p. m.
+Resultado: Harry Potter 2, obtenido el  27/03/2022 07:33:43 p. m.
+Resultado: Harry Potter, obtenido el  27/03/2022 07:33:43 p. m.
+Titulo ingresado: El sapito, sin resultados 27/03/2022 07:36:52 p. m.

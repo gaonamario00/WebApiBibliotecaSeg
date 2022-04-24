@@ -1,0 +1,136 @@
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\appsettings.json
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\WebApiBibliotecaSeg.staticwebassets.runtime.json
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\WebApiBibliotecaSeg.exe
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\WebApiBibliotecaSeg.deps.json
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\WebApiBibliotecaSeg.runtimeconfig.json
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\WebApiBibliotecaSeg.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\WebApiBibliotecaSeg.pdb
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\scopedcss\bundle\WebApiBibliotecaSeg.styles.css
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\refint\WebApiBibliotecaSeg.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.pdb
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.genruntimeconfig.cache
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\ref\WebApiBibliotecaSeg.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Lenovo\source\repos\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\libman.json
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\appsettings.json
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\libman.json
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\WebApiBibliotecaSeg.staticwebassets.runtime.json
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\WebApiBibliotecaSeg.exe
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\WebApiBibliotecaSeg.deps.json
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\WebApiBibliotecaSeg.runtimeconfig.json
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\WebApiBibliotecaSeg.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\WebApiBibliotecaSeg.pdb
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Humanizer.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.csproj.AssemblyReference.cache
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.AssemblyInfoInputs.cache
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.AssemblyInfo.cs
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.csproj.CoreCompileInputs.cache
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\scopedcss\bundle\WebApiBibliotecaSeg.styles.css
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.csproj.CopyComplete
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\refint\WebApiBibliotecaSeg.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.pdb
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\WebApiBibliotecaSeg.genruntimeconfig.cache
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\obj\Debug\net6.0\ref\WebApiBibliotecaSeg.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\gaona\OneDrive\Escritorio\Proyectos\Visual Studio\WebApiBibliotecaSeg\WebApiBibliotecaSeg\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

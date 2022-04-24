@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "43sFAzpkk0SM912R5Hc7PPIHIqP4eKov6J3p+mwcvOs=",
+  "Source": "WebApiBibliotecaSeg",
+  "BasePath": "_content/WebApiBibliotecaSeg",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApiBibliotecaSeg\\wwwroot",
+      "Source": "WebApiBibliotecaSeg",
+      "ContentRoot": "C:\\Users\\gaona\\OneDrive\\Escritorio\\Proyectos\\Visual Studio\\WebApiBibliotecaSeg\\WebApiBibliotecaSeg\\wwwroot\\",
+      "BasePath": "_content/WebApiBibliotecaSeg",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\gaona\\OneDrive\\Escritorio\\Proyectos\\Visual Studio\\WebApiBibliotecaSeg\\WebApiBibliotecaSeg\\wwwroot\\Archivo 1.txt",
+      "SourceId": "WebApiBibliotecaSeg",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gaona\\OneDrive\\Escritorio\\Proyectos\\Visual Studio\\WebApiBibliotecaSeg\\WebApiBibliotecaSeg\\wwwroot\\",
+      "BasePath": "_content/WebApiBibliotecaSeg",
+      "RelativePath": "Archivo 1.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Archivo 1.txt"
+    }
+  ]
+}
