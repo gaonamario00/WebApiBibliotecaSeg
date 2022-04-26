@@ -12,6 +12,7 @@ namespace WebApiBibliotecaSeg.Entidades
         [PrimeraLetraMayuscula]
         public string titulo { get; set; }
 
+        // Libro y autor tienen una relacion ManyToMany
         public List<LibroAutor> libroAutor { get; set; }
     }
 }

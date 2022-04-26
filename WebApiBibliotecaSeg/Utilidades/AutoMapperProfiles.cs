@@ -4,10 +4,23 @@ using WebApiBibliotecaSeg.Entidades;
 
 namespace WebApiAlumnosSeg.Utilidades
 {
+    //Clase para especificar la configuracion del automapper
+    // Profile es una clase de AutoMapper que nos permite crear el maping usando los nombres de las clases
     public class AutoMapperProfiles : Profile
     {
         public AutoMapperProfiles()
         {
+            //CreateMap nos permite mapear un objeto de un tipo a otro
+
+            //CreateMap<Origen, Destino>();
+
+            // Se utiliza para especificar que atributos de estas clases se quiere utilizar 
+            // ForMember( destino => destino.atributoEspecificoDeDestino,
+            //            opciones => opciones.MapFrom(origen => origen.atributoEspecificoDeOrigen);
+            // );
+
+            // En este caso estamos usando funciones para el atributo de origen, el cual es retornado por cada una de estas
+
             CreateMap<LibroDTO, Libros>();
             CreateMap<Libros, GetLibroDTO>();
 
@@ -19,15 +32,15 @@ namespace WebApiAlumnosSeg.Utilidades
 
             CreateMap<Autor, AutorDTO>();
 
-
             CreateMap<Autor, AutorDTOConLibros>()
                 .ForMember(autorDTO => autorDTO.Libros, opciones => opciones.MapFrom(MapAutorDTOLibros));
 
-            CreateMap<EditorialCreacionDTO, Editorial>();
-            CreateMap<Editorial, EditorialDTO>();
+            CreateMap<PermisosCreacionDTO, Permisos>();
+            CreateMap<Permisos, PermisosDTO>();
         }
 
-        private List<AutorDTO> MapLibrosDTOAutor(Libros libro, GetLibroDTO getLibroDTO)
+        // Tranfiere datos de una lista de libroAutor a una lista de AutorDTO
+          private List<AutorDTO> MapLibrosDTOAutor(Libros libro, GetLibroDTO getLibroDTO)
         {
             var result = new List<AutorDTO>();
 
@@ -45,6 +58,7 @@ namespace WebApiAlumnosSeg.Utilidades
             return result;
         }
 
+        // Tranfiere datos de una lista de libroAutor a una lista de GetLibroDTO
         private List<GetLibroDTO> MapAutorDTOLibros(Autor autor, AutorDTO autorDTO)
         {
             var result = new List<GetLibroDTO>();
@@ -67,6 +81,7 @@ namespace WebApiAlumnosSeg.Utilidades
 
         }
 
+        // Tranfiere datos de una lista de librosIds a una lista de LibroAutor
         private List<LibroAutor> MapLibroAutor(AutorCreacionDTO autorCreacionDTO, Autor autor)
         {
             var result = new List<LibroAutor>();

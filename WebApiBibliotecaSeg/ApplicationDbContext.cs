@@ -9,11 +9,12 @@ namespace WebApiBibliotecaSeg
         {
 
         }
-
+        // Construye un modelo basado en la forma de las entidades
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
+            // Setea a libroId y autorId como primary key de la tabla libroAutor
             modelBuilder.Entity<LibroAutor>()
                 .HasKey(libro => new { libro.libroId, libro.autorId });
         }
@@ -22,7 +23,7 @@ namespace WebApiBibliotecaSeg
 
         public DbSet<Autor> autores { get; set; }
 
-        public DbSet<Editorial> editorial { get; set; }
+        public DbSet<Permisos> permisos { get; set; }
 
         public DbSet<LibroAutor> libroAutor { get; set; }
     }

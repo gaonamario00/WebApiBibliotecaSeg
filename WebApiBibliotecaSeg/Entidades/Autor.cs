@@ -11,9 +11,11 @@ namespace WebApiBibliotecaSeg.Entidades
         [StringLength(maximumLength: 250, ErrorMessage = "El campo {0} solo puede tener hasta 250 caracteres")]
         [PrimeraLetraMayuscula]
         public string nombre { get; set; }
+        
+        // Un autor puede tener muchos permisos (OneToMany)
+        public List<Permisos> permisos { get; set; }
 
-        public List<Editorial> editoriales { get; set; }
-
+        // Libro y autor tienen una relacion ManyToMany
         public List<LibroAutor> libroAutor { get; set; }
 
     }

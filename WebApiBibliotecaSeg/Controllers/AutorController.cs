@@ -28,14 +28,24 @@ namespace WebApiBibliotecaSeg.Controllers
         [HttpGet("{id:int}")]
         public async Task<ActionResult<AutorDTOConLibros>> GetById(int id)
         {
+
+            // Include especifica el atributo el cual se quiere obtener
+            // TheInclude especifica aun mas la data a obtener
+         
+            // la variable autor obtiene los datos: Autor.libroAutor.libro y Autor.permisos.id
             var autor = await dbContext.autores
+                // indica que se quiere acceder a los datos del atributo libroAutor
                 .Include(libroDb => libroDb.libroAutor)
+                // indica que se quiere acceder a los datos del atributo libro
                 .ThenInclude(LibroAutor => LibroAutor.libro)
-                .Include(editorialDb => editorialDb.editoriales)
+                // indica que se quiere acceder a los datos del atributo permisos
+                .Include(permisosDb => permisosDb.permisos)
                 .FirstOrDefaultAsync(x => x.id == id);
 
+            // Se ordena la lista con apoyo del atributo orden de libroAutor
             autor.libroAutor = autor.libroAutor.OrderBy(x => x.orden).ToList();
 
+            // Se mapea la variable autor para que sea tipo AutorDTOConLibros y la retorna
             return mapper.Map<AutorDTOConLibros>(autor);
 
         }
@@ -43,36 +53,35 @@ namespace WebApiBibliotecaSeg.Controllers
         [HttpPost] 
         public async Task<ActionResult> Post(AutorCreacionDTO autorCreacionDTO)
         {
-
+            // Se verifica que se ingrese algo en la lista librosIds
            if(autorCreacionDTO.librosIds == null)
-            {
-                return BadRequest("No se puede crear el autor sin libros");
-            }
-
+            { return BadRequest("No se puede crear el autor sin libros"); }
+           
             var librosIds = await dbContext.libros
-                 .Where(libroDb => autorCreacionDTO.librosIds.Contains(libroDb.id)).Select(x => x.id).ToListAsync();
+                // Verifica que los ids de librosIds existan en la DB
+                 .Where(libroDb => autorCreacionDTO.librosIds
+                 .Contains(libroDb.id))
+                 // Se indica que se quiere obtener solamente el atributo id del libro
+                 .Select(x => x.id).ToListAsync();
 
+            // Si la longitud de ambas listas es diferente significa que de alguno o 
+            // algunos ids no se encontro registros en la DB
             if(autorCreacionDTO.librosIds.Count != librosIds.Count)
-            {
-                return BadRequest("No existe uno de los libros enviados");
-            }
+            { return BadRequest("No existe uno de los libros enviados"); }
 
+            // Mapea la variable autorCreacionDTO para ser tipo Autor
             var autor = mapper.Map<Autor>(autorCreacionDTO);
 
             if(autor.libroAutor != null)
             {
+                // Se setean los valores de el orden dependiendo de la cantidad de elementos
                 for (int i=0; i<autor.libroAutor.Count; i++)
                 {
                     autor.libroAutor[i].orden = i;
                 }
             }
-
-
             dbContext.Add(autor);
             await dbContext.SaveChangesAsync();
-
-
-
             return Ok();
         }
 

@@ -11,7 +11,7 @@ using WebApiBibliotecaSeg;
 namespace WebApiBibliotecaSeg.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220424062529_Inicial")]
+    [Migration("20220426062752_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,28 +39,6 @@ namespace WebApiBibliotecaSeg.Migrations
                     b.HasKey("id");
 
                     b.ToTable("autores");
-                });
-
-            modelBuilder.Entity("WebApiBibliotecaSeg.Entidades.Editorial", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("autorId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("autorId");
-
-                    b.ToTable("editorial");
                 });
 
             modelBuilder.Entity("WebApiBibliotecaSeg.Entidades.LibroAutor", b =>
@@ -99,15 +77,26 @@ namespace WebApiBibliotecaSeg.Migrations
                     b.ToTable("libros");
                 });
 
-            modelBuilder.Entity("WebApiBibliotecaSeg.Entidades.Editorial", b =>
+            modelBuilder.Entity("WebApiBibliotecaSeg.Entidades.Permisos", b =>
                 {
-                    b.HasOne("WebApiBibliotecaSeg.Entidades.Autor", "autor")
-                        .WithMany("editoriales")
-                        .HasForeignKey("autorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.Navigation("autor");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("autorId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("tipo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("autorId");
+
+                    b.ToTable("permisos");
                 });
 
             modelBuilder.Entity("WebApiBibliotecaSeg.Entidades.LibroAutor", b =>
@@ -129,11 +118,22 @@ namespace WebApiBibliotecaSeg.Migrations
                     b.Navigation("libro");
                 });
 
+            modelBuilder.Entity("WebApiBibliotecaSeg.Entidades.Permisos", b =>
+                {
+                    b.HasOne("WebApiBibliotecaSeg.Entidades.Autor", "autor")
+                        .WithMany("permisos")
+                        .HasForeignKey("autorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("autor");
+                });
+
             modelBuilder.Entity("WebApiBibliotecaSeg.Entidades.Autor", b =>
                 {
-                    b.Navigation("editoriales");
-
                     b.Navigation("libroAutor");
+
+                    b.Navigation("permisos");
                 });
 
             modelBuilder.Entity("WebApiBibliotecaSeg.Entidades.Libros", b =>

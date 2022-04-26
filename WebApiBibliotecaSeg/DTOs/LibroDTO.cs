@@ -3,6 +3,7 @@ using WebApiBibliotecaSeg.Validaciones;
 
 namespace WebApiBibliotecaSeg.DTOs
 {
+    // Se utiliza para transportar datos de la entidad Libros
     public class LibroDTO
     {
         [Required(ErrorMessage = "El campo de {0} es obligatorio")]

@@ -31,9 +31,15 @@ namespace WebApiBibliotecaSeg.Controllers
         [HttpGet("{id:int}")] //Se puede usar ? para que no sea obligatorio el parametro /{param=Gustavo}  getAlumno/{id:int}/
         public async Task<ActionResult<GetLibroDTO>> Get(int id)
         {
-            //var libro = await dbContext.libros.FirstOrDefaultAsync(x => x.id == id);
+
+            // Include especifica el atributo el cual se quiere obtener
+            // TheInclude especifica aun mas la data a obtener
+
+            // la variable libro obtiene los datos: Libros.libroAutor.autor
             var libro = await dbContext.libros
+                // indica que se quiere acceder a los datos del atributo libroAutor
                 .Include(dbLibro => dbLibro.libroAutor)
+                // indica que se quiere acceder a los datos del atributo autor
                 .ThenInclude(dbLibroAutor => dbLibroAutor.autor)
                 .FirstOrDefaultAsync(libroDb => libroDb.id == id);
 
@@ -42,6 +48,8 @@ namespace WebApiBibliotecaSeg.Controllers
                 return NotFound();
             }
 
+            // mapea la variable libro a tipo GetLibroDTO
+            // regresa un tipo GetLibroDTO
             return mapper.Map<GetLibroDTO>(libro);
 
         }
@@ -73,17 +81,19 @@ namespace WebApiBibliotecaSeg.Controllers
         public async Task<ActionResult> Post([FromBody] LibroDTO libroDTO)
         {
             //Ejemplo para validar desde el controlador con la BD con ayuda del dbContext
-
-            var existeLibroMismoTitulo = await dbContext.libros.AnyAsync(x => x.titulo == libroDTO.titulo);
+            var existeLibroMismoTitulo = await dbContext.libros.
+                AnyAsync(x => x.titulo == libroDTO.titulo);
 
             if (existeLibroMismoTitulo)
             {
                 return BadRequest($"Ya existe un autor con el nombre {libroDTO.titulo}");
             }
 
-            var alumno = mapper.Map<Libros>(libroDTO);
+            // mapea la variable libro a tipo libroDTO
+            var libro = mapper.Map<Libros>(libroDTO);
 
-            dbContext.Add(alumno);
+            // agrega el libro a la BD
+            dbContext.Add(libro);
             await dbContext.SaveChangesAsync();
 
             new EscribirEnArchivoMsg("nuevosRegistros.txt","Titulo: "+libroDTO.titulo + ", agregado el ");

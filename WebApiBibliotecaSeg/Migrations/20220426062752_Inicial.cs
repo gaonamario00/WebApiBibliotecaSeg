@@ -35,19 +35,19 @@ namespace WebApiBibliotecaSeg.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "editorial",
+                name: "permisos",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    tipo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     autorId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_editorial", x => x.Id);
+                    table.PrimaryKey("PK_permisos", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_editorial_autores_autorId",
+                        name: "FK_permisos_autores_autorId",
                         column: x => x.autorId,
                         principalTable: "autores",
                         principalColumn: "id",
@@ -80,29 +80,29 @@ namespace WebApiBibliotecaSeg.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_editorial_autorId",
-                table: "editorial",
+                name: "IX_libroAutor_autorId",
+                table: "libroAutor",
                 column: "autorId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_libroAutor_autorId",
-                table: "libroAutor",
+                name: "IX_permisos_autorId",
+                table: "permisos",
                 column: "autorId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "editorial");
-
-            migrationBuilder.DropTable(
                 name: "libroAutor");
 
             migrationBuilder.DropTable(
-                name: "autores");
+                name: "permisos");
 
             migrationBuilder.DropTable(
                 name: "libros");
+
+            migrationBuilder.DropTable(
+                name: "autores");
         }
     }
 }
