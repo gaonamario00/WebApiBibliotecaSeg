@@ -72,14 +72,10 @@ namespace WebApiBibliotecaSeg.Controllers
             // Mapea la variable autorCreacionDTO para ser tipo Autor
             var autor = mapper.Map<Autor>(autorCreacionDTO);
 
-            if(autor.libroAutor != null)
-            {
-                // Se setean los valores de el orden dependiendo de la cantidad de elementos
-                for (int i=0; i<autor.libroAutor.Count; i++)
-                {
-                    autor.libroAutor[i].orden = i;
-                }
-            }
+            // Setea el orden de libroAutor y al mismo tiempo
+            // actualiza los campos de autor
+            OrdenarPorAlumnos(autor);
+
             dbContext.Add(autor);
             await dbContext.SaveChangesAsync();
             
@@ -97,26 +93,66 @@ namespace WebApiBibliotecaSeg.Controllers
 
         }
 
+        //[HttpPut("{id:int}")]
+        //public async Task<ActionResult> Put(Autor autor, int id)
+        //{
+
+        //    var exist = await dbContext.autores.AnyAsync(x => x.id == id);
+
+        //    if (!exist)
+        //    {
+        //        return NotFound("La clase especifica no existe");
+        //    }
+
+        //    if (autor.id != id)
+        //    {
+        //        return BadRequest("El id de la clase no coincide con el establecido con el url");
+        //    }
+
+        //    dbContext.Update(autor);
+        //    await dbContext.SaveChangesAsync();
+
+        //    return Ok();
+        //}
+
         [HttpPut("{id:int}")]
-        public async Task<ActionResult> Put(Autor autor, int id)
+        public async Task<ActionResult> Put(int id, AutorCreacionDTO autorCreacionDTO)
         {
+            // La variable autorDB contiene solo La info de Autor.libroAutor
+            var autorDB = await dbContext.autores
+                // Indica que solo se quiere acceder a la variable libroAutor de autores
+                .Include(x => x.libroAutor)
+                // Indica que trae solo el primer registro que encuentre
+                .FirstOrDefaultAsync(x => x.id == id);
 
-            var exist = await dbContext.autores.AnyAsync(x => x.id == id);
+            if (autorDB == null) { return NotFound(); }
 
-            if (!exist)
-            {
-                return NotFound("La clase especifica no existe");
-            }
+            // mapea la variable autorCreacionDTO a tipo autorDB, o sea, a tipo Autor
+            autorDB = mapper.Map(autorCreacionDTO, autorDB);
 
-            if (autor.id != id)
-            {
-                return BadRequest("El id de la clase no coincide con el establecido con el url");
-            }
+            // Setea el orden de libroAutor y al mismo tiempo
+            // actualiza los campos de autor
+            OrdenarPorAlumnos(autorDB);
 
-            dbContext.Update(autor);
+            // guarda los cambios en la base de datos
             await dbContext.SaveChangesAsync();
 
-            return Ok();
+            //204: «Sin contenido». Este código significa que el servidor ha procesado
+            //con éxito la solicitud, pero no va a devolver ningún contenido.
+            return NoContent();
+        }
+
+        // Setea el orden de libroAutor y al mismo tiempo
+        // actualiza los campos de autor
+        private void OrdenarPorAlumnos(Autor autor)
+        {
+            if (autor.libroAutor != null)
+            {
+                for (int i = 0; i < autor.libroAutor.Count; i++)
+                {
+                    autor.libroAutor[i].orden = i;
+                }
+            }
         }
 
         [HttpDelete("{id:int}")]

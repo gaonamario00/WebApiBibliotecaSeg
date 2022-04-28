@@ -90,6 +90,36 @@ namespace WebApiBibliotecaSeg.Controllers
 
         }
 
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult> Put(int autorId, int id, PermisosCreacionDTO permisoCreacionDTO)
+        {
+            // Verifica si existe el autor, si no existe retorna 404
+            var existeAutor = await dbContext.autores.AnyAsync(autorBD => autorBD.id == autorId);
+            if(!existeAutor) { return NotFound(); }
+
+            // Verifica si existe el permiso, si no existe retorna 404
+            var existePermiso = await dbContext.permisos.AnyAsync(permisosBD => permisosBD.Id == id);
+            if(!existePermiso) { return NotFound(); }
+
+            // mapea la variable permisoCreacionDTO a tipo permiso
+            var permiso = mapper.Map<Permisos>(permisoCreacionDTO);
+            
+            // Hace que el id de la variable permiso sea el id de permiso recibido
+            permiso.Id = id;
+
+            // Hace que el autorId de la variable permiso sea el autorId recibido
+            permiso.autorId = autorId;
+
+            // actualiza el registro en la base de datos
+            dbContext.Update(permiso);
+            await dbContext.SaveChangesAsync();
+
+            //204: «Sin contenido». Este código significa que el servidor ha procesado
+            //con éxito la solicitud, pero no va a devolver ningún contenido.
+            return NoContent();
+
+        }
+
     }
 }
 

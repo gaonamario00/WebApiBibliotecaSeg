@@ -112,22 +112,26 @@ namespace WebApiBibliotecaSeg.Controllers
         }
 
         [HttpPut("{id:int}")]
-        public async Task<ActionResult> Put(Libros libro, int id)
+        public async Task<ActionResult> Put(LibroDTO libroCreacionDTO, int id)
         {
+            //verifica si existe el registro de la id recibida
             var exist = await dbContext.libros.AnyAsync(x => x.id == id);
-            if (!exist)
-            {
-                return NotFound();
-            }
+            if (!exist) { return NotFound(); }
 
-            if (libro.id != id)
-            {
-                return BadRequest("El id del libro no coincide con el establecido en la url.");
-            }
+            // mapea la variable libroCreacionDTO para que sea tipo Libros
+            var libro = mapper.Map<Libros>(libroCreacionDTO);
 
+            // Hace que el id de la variable anteriormente mapeada 
+            // Sea el recibido por parametro
+            libro.id = id;
+            
+            // Actualiza el registro en la BD
             dbContext.Update(libro);
             await dbContext.SaveChangesAsync();
-            return Ok();
+
+            //204: «Sin contenido». Este código significa que el servidor ha procesado
+            //con éxito la solicitud, pero no va a devolver ningún contenido.
+            return NoContent();
         }
 
         [HttpDelete("{id:int}")]
