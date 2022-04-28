@@ -32,8 +32,8 @@ namespace WebApiBibliotecaSeg
             {
                 opciones.Filters.Add(typeof(FiltroDeException));
             }).AddJsonOptions(x =>
-            x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles
-            );
+            // AddNewtonsoftJson(): Configura funciones específicas como formateadores de entrada y salida
+            x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles).AddNewtonsoftJson();
 
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("defaultConnection"))

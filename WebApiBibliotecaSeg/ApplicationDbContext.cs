@@ -16,6 +16,7 @@ namespace WebApiBibliotecaSeg
 
             // Setea a libroId y autorId como primary key de la tabla libroAutor
             modelBuilder.Entity<LibroAutor>()
+                // Siendo una primary key compuesta para la tabla de libroAutor
                 .HasKey(libro => new { libro.libroId, libro.autorId });
         }
 

@@ -35,6 +35,10 @@ namespace WebApiAlumnosSeg.Utilidades
             CreateMap<Autor, AutorDTOConLibros>()
                 .ForMember(autorDTO => autorDTO.Libros, opciones => opciones.MapFrom(MapAutorDTOLibros));
 
+            // ReverseMap: Cree una asignación de tipos desde el destino hasta el tipo de origen,
+            // con la validación deshabilitada. Esto permite el mapeo bidireccional.
+            CreateMap<AutorPatchDTO, Autor>().ReverseMap();
+
             CreateMap<PermisosCreacionDTO, Permisos>();
             CreateMap<Permisos, PermisosDTO>();
         }

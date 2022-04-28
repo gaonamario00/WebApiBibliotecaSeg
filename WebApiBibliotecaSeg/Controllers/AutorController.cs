@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApiBibliotecaSeg.DTOs;
@@ -41,6 +42,8 @@ namespace WebApiBibliotecaSeg.Controllers
                 // indica que se quiere acceder a los datos del atributo permisos
                 .Include(permisosDb => permisosDb.permisos)
                 .FirstOrDefaultAsync(x => x.id == id);
+
+            if (autor == null) { return NotFound(); }
 
             // Se ordena la lista con apoyo del atributo orden de libroAutor
             autor.libroAutor = autor.libroAutor.OrderBy(x => x.orden).ToList();
@@ -158,15 +161,56 @@ namespace WebApiBibliotecaSeg.Controllers
         [HttpDelete("{id:int}")]
         public async Task<ActionResult> Delete(int id)
         {
-            var exist = await dbContext.autores.AnyAsync(x => x.id == id);
-            if (!exist)
-            {
-                return NotFound("el recurdos no fue encontrado");
-            }
+            // Verifica si existe el registro
+            var exist = await dbContext.autores.AnyAsync(x=>x.id==id);
 
-            dbContext.Remove(new Autor { id = id });
+            // Si no existe retorna 404
+            if(!exist) { return NotFound(); }
+
+            // Elimina el registro del id recibido
+            dbContext.Remove(new Autor { id = id});
+
+            // Guarda cambios en la DB
             await dbContext.SaveChangesAsync();
             return Ok();
+        }
+
+        [HttpPatch("{id:int}")]
+        public async Task<ActionResult> Patch(int id,
+            // permite modificar un registro sin afectar a otro
+            // en este caso, modifica el autor sin afectar los libros
+            JsonPatchDocument<AutorPatchDTO> patchDocument)
+        {
+            // si es nulo regresa BadRequest()
+          if(patchDocument == null) { return BadRequest(); }
+
+            // obtiene el primer registro con el id recibido
+            var autorDB = await dbContext.autores.FirstOrDefaultAsync(x => x.id == id);
+
+            // Si no existe el registro se regrese 404
+            if (autorDB == null) { return NotFound(); }
+
+            // se mapea la variable autorDB a AutorPatchDTO
+            var autorDTO = mapper.Map<AutorPatchDTO>(autorDB);
+
+            // Actualiza o parchea el registro
+            patchDocument.ApplyTo(autorDTO);
+
+            // Valida la instancia del modelo especificado.
+            var isValid = TryValidateModel(autorDTO);
+
+            // Si no fue valida regresa BadRequest()
+            if (!isValid) { return BadRequest(); }
+
+            // mapea la variable autorDTO a tipo Autor
+            mapper.Map(autorDTO, autorDB);
+
+            // Guarda los cambios en la BD
+            await dbContext.SaveChangesAsync();
+
+            //204: «Sin contenido». Este código significa que el servidor ha procesado con éxito la solicitud,
+            // pero no va a devolver ningún contenido.
+            return NoContent();
         }
 
     }
