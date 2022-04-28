@@ -25,7 +25,7 @@ namespace WebApiBibliotecaSeg.Controllers
             return await dbContext.autores.ToListAsync();
         }
 
-        [HttpGet("{id:int}")]
+        [HttpGet("{id:int}", Name = "obtenerautor")] // se asigna un nombre a la ruta
         public async Task<ActionResult<AutorDTOConLibros>> GetById(int id)
         {
 
@@ -82,7 +82,19 @@ namespace WebApiBibliotecaSeg.Controllers
             }
             dbContext.Add(autor);
             await dbContext.SaveChangesAsync();
-            return Ok();
+            
+            // se mapea la variable autor para que sea tipo AutorDTO
+            var autorDTO = mapper.Map<AutorDTO>(autor);
+
+            return CreatedAtRoute("obtenerautor", //se manda el nombre de la ruta definido en el get
+                new { id = autor.id}, // se manda el id del autor
+                autorDTO); // se manda el objeto que contiene la informacion que se desea mostrar
+
+            /* la razon por la cual se manda una variable tipo AutorDTO en lugar de la tipo Autor
+             es por la informacion que esta va a mostrar en la api
+             al mandar la tipo Autor se muestra Id, nombre, permisos y libroAutor, la cual no toda se quiere mostrar
+             al manda la tipo AutorDTO solamente se va a mostrar el Id, nombre y permisos.*/
+
         }
 
         [HttpPut("{id:int}")]

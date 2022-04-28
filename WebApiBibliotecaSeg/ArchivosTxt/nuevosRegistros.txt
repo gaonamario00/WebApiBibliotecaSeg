@@ -24,3 +24,6 @@ Titulo: Harry Potter 2, agregado el  26/04/2022 01:28:51 a. m.
 Titulo: Harry Potter 3, agregado el  26/04/2022 01:28:54 a. m.
 Titulo: Harry Potter 4, agregado el  26/04/2022 01:28:56 a. m.
 Titulo: Harry Potter 5, agregado el  26/04/2022 01:28:59 a. m.
+Titulo: Harry Potter 6, agregado el  27/04/2022 06:11:24 p. m.
+Titulo: Harry Potter 7, agregado el  27/04/2022 07:20:22 p. m.
+Titulo: Harry Potter 8, agregado el  27/04/2022 07:25:28 p. m.

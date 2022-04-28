@@ -39,6 +39,20 @@ namespace WebApiBibliotecaSeg.Controllers
             // mapea la variable permisos a permisosDTO y la retorna
             return mapper.Map<List<PermisosDTO>>(permisos);
         }
+
+        // se agrega el endpoint para poder ver solo un permiso por id
+        [HttpGet("{id:int}", Name ="obtenerpermiso")] // se asigna un nombre a la ruta
+        public async Task<ActionResult<PermisosDTO>> GetById(int id)
+        {
+            // busca un registro en la base de datos por id
+            var permiso = await dbContext.permisos.FirstOrDefaultAsync(permisoDb => permisoDb.Id == id);
+
+            // si el registro no exisre regresa un NotFound
+            if(permiso == null) { return NotFound(); }
+
+            // se mapea la variable permiso para que sea tipo PermisosDTO y se retorna
+            return mapper.Map<PermisosDTO>(permiso);
+        }
         
         [HttpPost]
         public async Task<ActionResult> Post(int autorId, PermisosCreacionDTO permisosCreacionDTO)
@@ -59,10 +73,23 @@ namespace WebApiBibliotecaSeg.Controllers
             dbContext.Add(permisos);
 
             await dbContext.SaveChangesAsync();
-            return Ok();
+            
+            // Se mapea la variable permisos para que sea tipo
+            var permisoDTO = mapper.Map<PermisosDTO>(permisos);
+
+            return CreatedAtRoute(
+                "obtenerpermiso", //se manda el nombre de la ruta definido en el get
+                new {id = permisos.Id, autorId = autorId}, // se manda el id de permiso y el id de autor
+                                                           // ya que este controller depende de autorController
+                permisoDTO); // se manda el objeto que contiene la informacion que se desea mostrar
+
+            /* la razon por la cual se manda una variable tipo PermisosDTO en lugar de la tipo Permisos
+             es por la informacion que esta va a mostrar en la api
+             al mandar la Permisos se muestra Id, tipo, autorId y autor, la cual no toda se quiere mostrar
+             al manda la tipo PermisosDTO solamente se va a mostrar el Id y el tipo.*/
 
         }
 
-     }
+    }
 }
 

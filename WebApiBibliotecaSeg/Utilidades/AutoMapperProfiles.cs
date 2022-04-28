@@ -40,7 +40,11 @@ namespace WebApiAlumnosSeg.Utilidades
         }
 
         // Tranfiere datos de una lista de libroAutor a una lista de AutorDTO
-          private List<AutorDTO> MapLibrosDTOAutor(Libros libro, GetLibroDTO getLibroDTO)
+          private List<AutorDTO> MapLibrosDTOAutor(Libros libro,
+              GetLibroDTO getLibroDTO // Variable sin usar pero necesaria para poder estar esta funcion para personalizar
+                                      // el mapper aunque es indiferente si es tipo GetLibroDTO o LibrosDTOConAutor
+                                      // ya que LibrosDTOConAutor hereda de GetLibroDTO
+              )
         {
             var result = new List<AutorDTO>();
 
@@ -59,7 +63,11 @@ namespace WebApiAlumnosSeg.Utilidades
         }
 
         // Tranfiere datos de una lista de libroAutor a una lista de GetLibroDTO
-        private List<GetLibroDTO> MapAutorDTOLibros(Autor autor, AutorDTO autorDTO)
+        private List<GetLibroDTO> MapAutorDTOLibros(Autor autor, 
+            AutorDTO autorDTO // Variable sin usar pero necesaria para poder estar esta funcion para personalizar
+                              // el mapper aunque es indiferente si es tipo AutorDTO o AutorDTOConLibros
+                              // ya que AutorDTOConLibros hereda de AutorDTO
+            )
         {
             var result = new List<GetLibroDTO>();
 

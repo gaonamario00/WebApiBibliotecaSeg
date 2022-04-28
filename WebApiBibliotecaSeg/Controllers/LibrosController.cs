@@ -28,8 +28,8 @@ namespace WebApiBibliotecaSeg.Controllers
         }
 
 
-        [HttpGet("{id:int}")] //Se puede usar ? para que no sea obligatorio el parametro /{param=Gustavo}  getAlumno/{id:int}/
-        public async Task<ActionResult<GetLibroDTO>> Get(int id)
+        [HttpGet("{id:int}", Name = "obtenerlibro")] // se asigna un nombre a la ruta
+        public async Task<ActionResult<LibrosDTOConAutor>> Get(int id)
         {
 
             // Include especifica el atributo el cual se quiere obtener
@@ -48,9 +48,9 @@ namespace WebApiBibliotecaSeg.Controllers
                 return NotFound();
             }
 
-            // mapea la variable libro a tipo GetLibroDTO
-            // regresa un tipo GetLibroDTO
-            return mapper.Map<GetLibroDTO>(libro);
+            // mapea la variable libro a tipo LibrosDTOConAutor
+            // regresa un tipo LibrosDTOConAutor
+            return mapper.Map<LibrosDTOConAutor>(libro);
 
         }
 
@@ -98,8 +98,17 @@ namespace WebApiBibliotecaSeg.Controllers
 
             new EscribirEnArchivoMsg("nuevosRegistros.txt","Titulo: "+libroDTO.titulo + ", agregado el ");
 
-            return Ok();
+            // se mapea la variable libro para que sea tipo GetLibroDTO
+            var libroDTO_ = mapper.Map<GetLibroDTO>(libro);
 
+            return CreatedAtRoute("obtenerlibro", //se manda el nombre de la ruta definido en el get
+                new {id = libro.id}, // se manda el id de libro
+                libroDTO_); // se manda el objeto que contiene la informacion que se desea mostrar
+
+            /* la razon por la cual se manda una variable tipo GetLibroDTO en lugar de la tipo Libros
+             es por la informacion que esta va a mostrar en la api
+             al mandar la tipo Libros se muestra Id, titulo y libroAutor, la cual no toda se quiere mostrar
+             al manda la tipo GetLibroDTO solamente se va a mostrar el Id y el titulo.*/
         }
 
         [HttpPut("{id:int}")]

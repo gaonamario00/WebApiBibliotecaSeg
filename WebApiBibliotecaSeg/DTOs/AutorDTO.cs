@@ -5,6 +5,6 @@
     {
         public int id { get; set; }
         public string nombre { get; set; }
-        public List<PermisosDTO> editoriales { get; set; }
+        public List<PermisosDTO> permisos { get; set; }
     }
 }
