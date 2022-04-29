@@ -27,3 +27,6 @@ Titulo: Harry Potter 5, agregado el  26/04/2022 01:28:59 a. m.
 Titulo: Harry Potter 6, agregado el  27/04/2022 06:11:24 p. m.
 Titulo: Harry Potter 7, agregado el  27/04/2022 07:20:22 p. m.
 Titulo: Harry Potter 8, agregado el  27/04/2022 07:25:28 p. m.
+Titulo: The hunger games, agregado el  28/04/2022 08:32:39 p. m.
+Titulo: The hunger games 2, agregado el  28/04/2022 08:32:45 p. m.
+Titulo: The hunger games 3, agregado el  28/04/2022 08:32:48 p. m.
