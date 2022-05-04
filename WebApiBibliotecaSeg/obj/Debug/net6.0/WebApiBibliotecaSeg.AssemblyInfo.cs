@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("b49f5a4d-de38-4cab-b77c-7d1557479211")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApiBibliotecaSeg")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

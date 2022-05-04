@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -13,14 +14,24 @@ namespace WebApiBibliotecaSeg.Controllers
     {
         private readonly ApplicationDbContext dbContext;
         private readonly IMapper mapper;
+        private readonly IConfiguration configuration;
 
-        public AutorController(ApplicationDbContext context, IMapper mapper)
+        public AutorController(ApplicationDbContext context, IMapper mapper,
+            IConfiguration configuration)
         {
             this.dbContext = context;
             this.mapper = mapper;
+            this.configuration = configuration;
+        }
+
+        [HttpGet("provedoresDeConfiguracion")]
+        public ActionResult<string> GetConfiguracion()
+        {
+            return configuration["proveedorTerminal"];
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult<List<Autor>>> GetAll()
         {
             return await dbContext.autores.ToListAsync();
